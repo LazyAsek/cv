@@ -1,13 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Julian Włoch – Software developer (CV)</title>
 <meta name="description" content="CV and portfolio of Julian Włoch, Computer Engineering student at Lublin University of Technology.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&amp;family=Public+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -26,7 +24,7 @@
   <div class="grid">
     <section class="tile wide" style="--d:0s">
       <h2>Summary</h2>
-      <p>Student of Technical Computer Science (engineering degree) at Lublin University of Technology, interested in software development, automation, data analysis and software engineering. I write mostly Python, with Rust, C# and SQL alongside, and I like turning small ideas into working tools.</p>
+      <p>Student of Technical Computer Science (engineering degree) at Lublin University of Technology, interested in software development, automation, data analysis and software engineering. I write mostly Python, with Rust, C#, Java and SQL alongside, and I like turning small ideas into working tools.</p>
     </section>
 
     <section class="tile wide" style="--d:-2s">
@@ -34,28 +32,39 @@
       <article>
         <h3><a href="https://github.com/LazyAsek/GraphIt">GraphIt</a></h3>
         <p>Native desktop app in Python for visualising stock-market data. It combines Streamlit and Plotly inside PyWebView, with a local SQLite cache, date-range filtering, a choice of chart types, multi-company comparison on one chart and saved configuration.</p>
+        <p class="tags">Python, Streamlit, Plotly, PyWebView, SQLite, yfinance</p>
       </article>
       <article>
-        <h3>Automation and web scraping</h3>
-        <p>Python scripts (Playwright, BeautifulSoup, httpx) that fetch and process data from websites, including an OLX listings monitor, with results stored in SQLite.</p>
+        <h3><a href="https://github.com/LazyAsek/bot">OLX Offer Tracker</a></h3>
+        <p>An experimental scraping and automation tool for monitoring listings on OLX.pl. It drives a Chromium browser with Playwright, handles dynamically loaded results, sorting options and category filters, collects and normalises listing URLs, and separates new offers from ones saved earlier, with a separate listing file per search topic. The long-term idea was automated deal finding, for example comparing second-hand LEGO prices with BrickLink; Telegram alerts, a SQLite store and more marketplaces are planned but not built yet.</p>
+        <p class="tags">Python, Playwright, BeautifulSoup, Chromium</p>
       </article>
       <article>
-        <h3>More on GitHub</h3>
-        <ul class="plain">
-          <li><a href="https://github.com/LazyAsek/rust_game_of_life">rust_game_of_life</a>: Conway's Game of Life simulation in Rust.</li>
-          <li><a href="https://github.com/LazyAsek/slime-farm">slime-farm</a>: personal repository.</li>
-          <li><a href="https://github.com/LazyAsek/DailyNews">DailyNews</a>: personal repository.</li>
-          <li><a href="https://github.com/LazyAsek/bot">bot</a>: personal repository.</li>
-          <li><a href="https://github.com/LazyAsek/functions">functions</a>: personal repository.</li>
-        </ul>
-        <!-- TODO: replace the short "personal repository" notes with details from each README. -->
+        <h3><a href="https://github.com/LazyAsek/DailyNews">DailyNews</a></h3>
+        <p>An automated pipeline designed to turn stories from Medium Daily Edition into vertical 9:16 YouTube Shorts (1080×1920, MP4). The planned flow is scraping, article extraction, local-LLM script writing, AI voice-over, video rendering, validation and automatic upload, all running on self-hosted models to avoid paid cloud APIs. The README lists Ollama, Whisper, Piper / XTTS and FFmpeg as potential building blocks.</p>
+        <p class="tags">Python, local LLMs, FFmpeg, automation</p>
+      </article>
+      <article>
+        <h3><a href="https://github.com/LazyAsek/slime-farm">Slime Farm</a></h3>
+        <p>My first larger programming project: an idle game in Java where you hatch eggs, collect slimes of different tiers, earn passive coins, buy upgrades and drag slimes around your farm. Progress is saved automatically. Built with Swing and AWT (rendering, mouse input, collision detection), ImageIO sprites, custom graphics and WAV sound. It taught me game loops, OOP structure, file handling and organising a bigger codebase.</p>
+        <p class="tags">Java, Swing, AWT, game development</p>
+      </article>
+      <article>
+        <h3><a href="https://github.com/LazyAsek/functions">Functions</a></h3>
+        <p>A small program that animates the graphs of sin, cos, tangent and cotangent. Drawing is keyboard-controlled: Space starts drawing, and S, C, T and G start sine, cosine, tangent and cotangent individually, so you can watch several functions being drawn at once. A ready-to-run .exe is included in the release folder.</p>
+        <p class="tags">Maths visualisation, keyboard controls</p>
+      </article>
+      <article>
+        <h3><a href="https://github.com/LazyAsek/rust_game_of_life">rust_game_of_life</a></h3>
+        <p>Two cellular automata in Rust: Conway's Game of Life and Langton's Ant. In Game of Life you set the number of starting squares, then press Space to run the simulation. For Langton's Ant you set the starting squares to 0 and press A to release the ant. A ready-to-run .exe is included in the release folder.</p>
+        <p class="tags">Rust, cellular automata, simulation</p>
       </article>
     </section>
 
     <section class="tile" style="--d:-4s">
       <h2>Skills</h2>
       <dl>
-        <dt>Languages</dt><dd>Python, Rust, C#, SQL, JavaScript, HTML, CSS</dd>
+        <dt>Languages</dt><dd>Python, Rust, C#, Java, SQL, JavaScript, HTML, CSS</dd>
         <dt>Python ecosystem</dt><dd>Playwright, BeautifulSoup, httpx, pandas, NumPy, SymPy, Streamlit, Plotly, PyWebView, yfinance</dd>
         <dt>Systems and tools</dt><dd>Linux CLI and administration, Git / GitHub, computer networks (Cisco CCNA), AutoCAD, Solid Edge, Visual Paradigm, 3D printing and scanning (Bambu Lab, GOM Scan)</dd>
         <dt>Algorithms</dt><dd>Dynamic programming, backtracking, Union-Find, hash tables, greedy algorithms, sorting</dd>
@@ -93,5 +102,6 @@
 </main>
 
 <script src="script.js"></script>
-</body>
-</html>
+
+
+</body></html>
