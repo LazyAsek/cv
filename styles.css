@@ -129,6 +129,7 @@ h2 {
 }
 h3 { font-size: 1.02rem; font-weight: 600; margin: 0 0 0.25rem; }
 p { margin: 0 0 0.8rem; }
+.tags { font-size: 0.85rem; color: var(--glint); opacity: 0.85; margin-top: 0.4rem; }
 article + article { margin-top: 1.1rem; }
 article p:last-child { margin-bottom: 0; }
 
@@ -178,4 +179,5 @@ html.calm .tile, html.calm .tile.bump { animation: none; }
   h1 { text-shadow: none; }
   a { color: #0b4f6c; }
   dd, .where { color: #333; }
+  .tags { color: #0b4f6c; }
 }
