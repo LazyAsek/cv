@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Julian Włoch – Software developer (CV)</title>
+<meta name="description" content="CV and portfolio of Julian Włoch, Computer Engineering student at Lublin University of Technology.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<canvas id="water-canvas" aria-hidden="true"></canvas>
+
+<main class="page">
+  <header class="hero">
+    <div>
+      <h1>Julian Włoch</h1>
+      <p class="lead">Computer Engineering student building tools for data, automation and desktop apps.</p>
+      <p class="where">Lublin / Lubartów, Poland</p>
+    </div>
+    <button id="motion-toggle" class="toggle" type="button" aria-pressed="false">Still water</button>
+  </header>
+
+  <div class="grid">
+    <section class="tile wide" style="--d:0s">
+      <h2>Summary</h2>
+      <p>Student of Technical Computer Science (engineering degree) at Lublin University of Technology, interested in software development, automation, data analysis and software engineering. I write mostly Python, with Rust, C# and SQL alongside, and I like turning small ideas into working tools.</p>
+    </section>
+
+    <section class="tile wide" style="--d:-2s">
+      <h2>Projects</h2>
+      <article>
+        <h3><a href="https://github.com/LazyAsek/GraphIt">GraphIt</a></h3>
+        <p>Native desktop app in Python for visualising stock-market data. It combines Streamlit and Plotly inside PyWebView, with a local SQLite cache, date-range filtering, a choice of chart types, multi-company comparison on one chart and saved configuration.</p>
+      </article>
+      <article>
+        <h3>Automation and web scraping</h3>
+        <p>Python scripts (Playwright, BeautifulSoup, httpx) that fetch and process data from websites, including an OLX listings monitor, with results stored in SQLite.</p>
+      </article>
+      <article>
+        <h3>More on GitHub</h3>
+        <ul class="plain">
+          <li><a href="https://github.com/LazyAsek/rust_game_of_life">rust_game_of_life</a>: Conway's Game of Life simulation in Rust.</li>
+          <li><a href="https://github.com/LazyAsek/slime-farm">slime-farm</a>: personal repository.</li>
+          <li><a href="https://github.com/LazyAsek/DailyNews">DailyNews</a>: personal repository.</li>
+          <li><a href="https://github.com/LazyAsek/bot">bot</a>: personal repository.</li>
+          <li><a href="https://github.com/LazyAsek/functions">functions</a>: personal repository.</li>
+        </ul>
+        <!-- TODO: replace the short "personal repository" notes with details from each README. -->
+      </article>
+    </section>
+
+    <section class="tile" style="--d:-4s">
+      <h2>Skills</h2>
+      <dl>
+        <dt>Languages</dt><dd>Python, Rust, C#, SQL, JavaScript, HTML, CSS</dd>
+        <dt>Python ecosystem</dt><dd>Playwright, BeautifulSoup, httpx, pandas, NumPy, SymPy, Streamlit, Plotly, PyWebView, yfinance</dd>
+        <dt>Systems and tools</dt><dd>Linux CLI and administration, Git / GitHub, computer networks (Cisco CCNA), AutoCAD, Solid Edge, Visual Paradigm, 3D printing and scanning (Bambu Lab, GOM Scan)</dd>
+        <dt>Algorithms</dt><dd>Dynamic programming, backtracking, Union-Find, hash tables, greedy algorithms, sorting</dd>
+      </dl>
+    </section>
+
+    <section class="tile" style="--d:-6s">
+      <h2>Education and certificates</h2>
+      <article>
+        <h3>Lublin University of Technology</h3>
+        <p>Technical Computer Science (engineering studies), GPA 4.09. Coursework: electrical engineering and electronics, data transmission, Linux administration, SQL databases, C# programming, physics, calculus, CAD/3D, UML modelling.</p>
+      </article>
+      <article>
+        <h3>Technical school "Szopen", Lubartów</h3>
+        <p>Professional qualifications INF.02 and INF.03, and the Cisco CCNA certificate.</p>
+      </article>
+    </section>
+
+    <section class="tile" style="--d:-3s">
+      <h2>Activity</h2>
+      <p>I practise algorithms regularly on <a href="https://leetcode.com/u/Youlian/">LeetCode</a> (profile Youlian): over 600 problems solved in Python, 15 badges, including the 500 Days Badge.</p>
+      <p>On <a href="https://x.com/JulianWloch">X (@JulianWloch)</a> I share project progress in the #BuildInPublic spirit, such as GraphIt's save system, company comparison and chart type selection.</p>
+    </section>
+
+    <section class="tile" style="--d:-5s">
+      <h2>Contact</h2>
+      <ul class="plain">
+        <li><a href="mailto:kontakt@twojadomena.pl">kontakt@twojadomena.pl</a> <!-- TODO: replace with your real e-mail --></li>
+        <li><a href="https://github.com/LazyAsek">GitHub: LazyAsek</a></li>
+        <li><a href="https://x.com/JulianWloch">X: @JulianWloch</a></li>
+        <li><a href="https://leetcode.com/u/Youlian/">LeetCode: Youlian</a></li>
+      </ul>
+    </section>
+  </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
